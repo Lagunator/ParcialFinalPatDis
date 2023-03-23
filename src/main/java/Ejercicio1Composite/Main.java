@@ -16,9 +16,14 @@ public class Main {
         urbanizacionAAA.add(zona2);
         urbanizacionBBB.add(zona4);
         Composite departamento1 = new Composite("Sucre");
-
+        Composite departamentoB = new Composite("Pando");
         departamento1.add(urbanizacionAAA);
-        departamento1.add(urbanizacionBBB);
+        departamentoB.add(urbanizacionBBB);
+
+        Composite pais = new Composite("Bolivia");
+
+        pais.add(departamento1);
+        pais.add(departamentoB);
 
         departamento1.setUltimo(true);
         departamento1.calcularHabitantes();
